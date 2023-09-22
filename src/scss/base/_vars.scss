@@ -1,0 +1,26 @@
+:root {
+	--container-width: 1366px;
+	--container-padding: 0;
+
+	--font-main: 'Poppins', sans-serif;
+	--font-accent: 'Playfair Display', serif;
+
+	--page-bg: #fff;
+	--page-bg-second:#316099;
+	--text-color-dark: #1F3F68;
+	--text-color-dark-alpha: rgba(31, 63, 104, 0.2);
+	--text-second: #316099;
+	--text-white: #ffffff;
+	--txt-link: #5A98D0;
+	--accent: #5A98D0;
+	--main-screen-bg: linear-gradient(0deg, rgba(152, 195, 232, 0.54) 8.84%, rgba(152, 195, 232, 0.00) 31.12%);
+
+    --laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+}
+
+.dark {
+    --page-bg: #252526;
+    --text-color: #fff;
+}
