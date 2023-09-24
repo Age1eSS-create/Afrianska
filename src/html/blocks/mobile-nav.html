@@ -1,9 +1,30 @@
 <div class="mobile-nav">
-	<ul class="mobile-nav__list">
-		<li><a href="#" class="active">Home</a></li>
-		<li><a href="#!">Services</a></li>
-		<li><a href="#!">About</a></li>
-		<li><a href="#!">Projects</a></li>
-		<li><a href="#!">Contact</a></li>
-	</ul>
+	<div class="mobile-nav__list">
+		<div class="cross">
+			<img class="cross-close" width="50" height="50" src="https://img.icons8.com/ios/50/1F3F68/multiply.png" alt="multiply"/>
+		</div>
+		<div class="title">
+			SEND US MESSAGE
+		</div>
+		<form id="form" class="form">
+			<div class="input-block">
+				<p class="label">Full Name</p>
+				<input id="name" class="input input-name" type="text" placeholder="Your Name" autofocus>
+				<div id="name-error" class="error">Заполните поле!</div>
+			</div>
+			<div class="input-block">
+				<p class="label">Email</p>
+				<input id="email" class="input input-email" type="emal" placeholder="Your Email">
+				<div id="email-error" class="error">Заполните поле!</div>
+			</div>
+			<div class="textarea-block">
+				<p class="label">Message</p>
+				<textarea id="comment" class="textarea" type="text" placeholder="Your Message"></textarea>
+				<div id="comment-error" class="error">Заполните поле!</div>
+			</div>
+			<div class="button-block">
+				<input class="button" type="submit" value="submit">
+			</div>
+		</form>
+	</div>
 </div>

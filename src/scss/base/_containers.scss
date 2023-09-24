@@ -2,6 +2,15 @@
 	padding: 0 var(--container-padding);
 	max-width: var(--container-width);
 	margin: 0 auto;
+	@media screen and (max-width: 1366px) {
+		padding: 0 var(--container-padding--laptop);
+	}
+	@media screen and (max-width: 1120px) {
+		max-width: var(--container-width--laptop);
+	}
+	//@media screen and (max-width: 950px) {
+	//	max-width: var(--container-width--phone);
+	//}
 }
 
 .container-right {

@@ -21,7 +21,6 @@
     </div>
 </header>
 
-
 		<section class="body">
 			<div class="main">
 				<div class="container">
@@ -394,7 +393,7 @@
 								<h2 class="title">Intersted to woek with our team?</h2>
 								<div class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
 							</div>
-							<button class="button">Let’s Talk</button>
+							<button class="button modal-btn">Let’s Talk</button>
 						</div>
 					</div>
 					<div class="footer">
@@ -453,6 +452,42 @@
 				</div>
 			</div>
 		</section>
+		<div class="mobile-nav">
+	<div class="mobile-nav__list">
+		<div class="cross">
+			<img class="cross-close" width="50" height="50" src="https://img.icons8.com/ios/50/1F3F68/multiply.png" alt="multiply"/>
+		</div>
+		<div class="title">
+			SEND US MESSAGE
+		</div>
+		<form id="form" class="form">
+			<div class="input-block">
+				<p class="label">Full Name</p>
+				<input id="name" class="input input-name" type="text" placeholder="Your Name" autofocus>
+				<div id="name-error" class="error">Заполните поле!</div>
+			</div>
+			<div class="input-block">
+				<p class="label">Email</p>
+				<input id="email" class="input input-email" type="emal" placeholder="Your Email">
+				<div id="email-error" class="error">Заполните поле!</div>
+			</div>
+			<div class="textarea-block">
+				<p class="label">Message</p>
+				<textarea id="comment" class="textarea" type="text" placeholder="Your Message"></textarea>
+				<div id="comment-error" class="error">Заполните поле!</div>
+			</div>
+			<div class="button-block">
+				<input class="button" type="submit" value="submit">
+			</div>
+		</form>
+	</div>
+</div>
+
+		<div class="popup">
+  <div class="popup__info">
+    Your message successfully sent
+  </div>
+</div>
 
 		<script src="./js/index.bundle.js"></script>
 	</body>

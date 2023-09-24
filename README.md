@@ -1,2 +1,0 @@
-# Afrianska
-Web application Afrianska

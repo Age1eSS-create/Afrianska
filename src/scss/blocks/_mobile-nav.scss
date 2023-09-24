@@ -1,20 +1,18 @@
 .mobile-nav {
 	position: fixed;
 	// top: 0;
-	top: -100%;
+	top: -1000%;
 	width: 100%;
 	height: 100%;
-    z-index: 99;
+    z-index: 3;
 
 	display: flex;
     flex-direction: column;
     align-items: center;
 	justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    // background: linear-gradient(209deg, #4287b3 -17.38%, #133f6b 78.4%), #276195;
-	background: rgb(130, 156, 168);
-	transition: all 0.2s ease-in;
+	background: rgba(0, 0, 0, 0.49);
+	transition: all 1s;
+	backdrop-filter: blur(5px);
 }
 
 .mobile-nav--open {
@@ -26,13 +24,87 @@
 }
 
 .mobile-nav__list {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	row-gap: 20px;
-	font-size: 28px;
-
-	& .active {
-		opacity: 0.5;
+	background-color: var(--text-white);
+	min-width: 350px;
+	width: 540px;
+	padding: 56px;
+	color: var(--text-color-dark);
+	@media screen and (max-width: 755px) {
+		width: 345px;
+		padding: 20px;
+	}
+	.cross {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		img	{
+			cursor: pointer;
+		}
+	}
+	.title {
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 30px; /* 150% */
+		letter-spacing: 0.8px;
+		margin-bottom: 48px;
+		@media screen and (max-width: 755px) {
+			margin-bottom: 20px;
+		}
+	}
+	.form {
+		.input-block, .textarea-block {
+			position: relative;
+			.error {
+				position: absolute;
+				display: none;
+				top: 17px;
+				right: 0;
+				color: red;
+				font-weight: 600;
+				&.open {
+					display: block;
+				}
+			}
+			.label {
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 30px; /* 187.5% */
+				letter-spacing: 0.64px;
+				margin-bottom: 8px;
+			}
+			.input, .textarea {
+				padding: 21px 36px;
+				border-radius: 10px;
+				border: 1px solid rgba(53, 110, 173, 0.4);
+				width: 100%;
+				color: black;
+				&.form-error {
+					border: 1px solid rgba(243, 0, 0, 0.5);
+				}
+			}
+			.textarea {
+				resize: none;
+				height: 144px;
+				outline: none;
+			}
+		}
+		.input-block {
+			margin-bottom: 32px;
+			@media screen and (max-width: 755px) {
+				margin-bottom: 15px;
+			}
+		}
+		.textarea-block {
+			margin-bottom: 72px;
+			@media screen and (max-width: 755px) {
+				margin-bottom: 20px;
+			}
+		}
+		.button-block {
+			width: 100%;
+			.button {
+				width: 100%;
+			}
+		}
 	}
 }

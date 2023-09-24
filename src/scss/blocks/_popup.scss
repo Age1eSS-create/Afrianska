@@ -1,0 +1,20 @@
+.popup {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0, 0, 0);
+  transition: all 1s;
+  backdrop-filter: blur(5px);
+  z-index: 5;
+  &__info {
+    background-color: #63ef63;
+    padding: 20px 15px;
+  }
+}
+.popup--open {
+  top: 0;
+}
